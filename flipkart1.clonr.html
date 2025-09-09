@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipkart-style Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1f3f6;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 12px 32px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2874f0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    .explore-plus {
+      font-size: 13px;
+      color: #878787;
+    }
+    .explore-plus span {
+      color: #fbc02d;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 32px;
+      position: relative;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px 16px 10px 40px;
+      border: none;
+      border-radius: 8px;
+      background-color: #f0f5ff;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      color: #878787;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      color: #212121;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-links a:hover {
+      color: #2874f0;
+    }
+
+    /* Categories */
+    .categories-bar {
+      display: flex;
+      gap: 32px;
+      padding: 24px 32px;
+      background-color: #fff;
+      border-bottom: 2px solid #f0f0f0;
+      overflow-x: auto;
+    }
+
+    .category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 100px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .category img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      margin-bottom: 6px;
+    }
+
+    .category p {
+      font-size: 15px;
+      font-weight: 500;
+      margin: 0;
+      color: #212121;
+      white-space: nowrap;
+    }
+
+    .new-badge {
+      background: #2874f0;
+      color: #fff;
+      font-size: 11px;
+      font-weight: bold;
+      border-radius: 8px;
+      padding: 2px 8px;
+      margin-left: 6px;
+      vertical-align: middle;
+      display: inline-block;
+    }
+  </style>
+  <!-- Use Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-area">
+      <span class="logo">Flipkart</span>
+      <span class="explore-plus">Explore <span>Plus</span> <i class="fa-solid fa-star" style="font-size:12px;"></i></span>
+    </div>
+    <div class="search-bar">
+      <i class="fa fa-search search-icon"></i>
+      <input type="text" placeholder="Search for Products, Brands and More">
+    </div>
+    <div class="nav-links">
+      <a href="#"><i class="fa-regular fa-user"></i> Login <i class="fa fa-chevron-down" style="font-size:12px;"></i></a>
+      <a href="#"><i class="fa fa-shopping-cart"></i> Cart</a>
+      <a href="#"><i class="fa fa-store"></i> Become a Seller</a>
+      <a href="#"><i class="fa fa-ellipsis-v"></i></a>
+    </div>
+  </div>
+
+  <!-- Categories Bar -->
+  <div class="categories-bar">
+    <div class="category">
+      <img src="miniutes.png" alt="Minutes">
+      <p>Minutes <span class="new-badge">NEW</span></p>
+    </div>
+    <div class="category">
+      <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/MobilesStore.png" alt="Mobiles">
+      <p>Mobiles & Tablets</p>
+    </div>
+    <div class="category">
+      <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/FashionStore.png" alt="Fashion">
+      <p>Fashion <i class="fa fa-chevron-down" style="font-size:12px;"></i></p>
+    </div>
+    <div class="category">
+      <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/ElectronicsStore.png" alt="Electronics">
+      <p>Electronics <i class="fa fa-chevron-down" style="font-size:12px;"></i></p>
+    </div>
+    <div class="category">
+      <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/HomeStore.png" alt="Home">
+      <p>Home & Furniture <i class="fa fa-chevron-down" style="font-size:12px;"></i></p>
+    </div>
+    <div class="category">
+      <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/TVStore.png" alt="TV">
+      <p>TV & Appliances</p>
+    </div>
+    <div class="category">
+      <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/FlightStore.png" alt="Flights">
+      <p>Flight Bookings</p>
+    </div>
+    <div class="category">
+      <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/BeautyStore.png" alt="Beauty">
+      <p>Beauty, Food.. <i class="fa fa-chevron-down" style="font-size:12px;"></i></p>
+    </div>
+    <div class="category">
+      <img src="https://static-assets-web.flixcart.com/fk-sp-static/images/GroceryStore.png" alt="Grocery">
+      <p>Grocery</p>
+    </div>
+  </div>
+
+</body>
+</html>
